@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Sitecore_analytics" Class="AnalyticsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=localhost;Initial Catalog=Sitecore_analytics;Persist Security Info=True;User ID=sitecoreuser" SettingsObjectName="Sitecore.SharedSource.Analytics.Properties.Settings" SettingsPropertyName="Sitecore_analyticsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Automations" Member="Automations">
+    <Type Name="Automation">
+      <Column Name="AutomationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AutomationName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Campaignid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IntegrationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IntegrationLabel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Suspended" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Automation_AutomationState" Member="AutomationStates" ThisKey="AutomationId" OtherKey="AutomationId" Type="AutomationState" />
+      <Association Name="Campaign_Automation" Member="Campaign" ThisKey="Campaignid" OtherKey="CampaignId" Type="Campaign" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Visits" Member="Visits">
+    <Type Name="Visit">
+      <Column Name="VisitId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorVisitIndex" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VisitPageCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StartDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TrafficType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AspNetSessionId" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ReferringSiteId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="KeywordsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="BrowserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="UserAgentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="OsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ScreenId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="CampaignId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="RDNS" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Column Name="MultiSite" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Column Name="LocationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Ip" Type="System.Data.Linq.Binary" DbType="VarBinary(16) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="BusinessName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PostalCode" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MetroCode" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="AreaCode" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IspName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Latitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Longitude" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TestSetId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TestValues" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Referrer" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="State" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="StateChanged" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="DeviceName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Language" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Visit_PageEvent" Member="PageEvents" ThisKey="VisitId" OtherKey="VisitId" Type="PageEvent" />
+      <Association Name="Visit_Page" Member="Pages" ThisKey="VisitId" OtherKey="VisitId" Type="Page" />
+      <Association Name="Visit_Profile" Member="Profiles" ThisKey="VisitId" OtherKey="VisitId" Type="Profile" />
+      <Association Name="Browser_Visit" Member="Browser" ThisKey="BrowserId" OtherKey="BrowserId" Type="Browser" IsForeignKey="true" />
+      <Association Name="Campaign_Visit" Member="Campaign" ThisKey="CampaignId" OtherKey="CampaignId" Type="Campaign" IsForeignKey="true" />
+      <Association Name="GeoIp_Visit" Member="GeoIp" ThisKey="Ip" OtherKey="Ip" Type="GeoIp" IsForeignKey="true" />
+      <Association Name="Keyword_Visit" Member="Keyword" ThisKey="KeywordsId" OtherKey="KeywordsId" Type="Keyword" IsForeignKey="true" />
+      <Association Name="Location_Visit" Member="Location" ThisKey="LocationId" OtherKey="LocationId" Type="Location" IsForeignKey="true" />
+      <Association Name="O_Visit" Member="O" ThisKey="OsId" OtherKey="OsId" Type="O" IsForeignKey="true" />
+      <Association Name="ReferringSite_Visit" Member="ReferringSite" ThisKey="ReferringSiteId" OtherKey="ReferringSiteId" Type="ReferringSite" IsForeignKey="true" />
+      <Association Name="Screen_Visit" Member="Screen" ThisKey="ScreenId" OtherKey="ScreenId" Type="Screen" IsForeignKey="true" />
+      <Association Name="TrafficType_Visit" Member="TrafficType1" ThisKey="TrafficType" OtherKey="TrafficType1" Type="TrafficType" IsForeignKey="true" />
+      <Association Name="UserAgent_Visit" Member="UserAgent" ThisKey="UserAgentId" OtherKey="UserAgentId" Type="UserAgent" IsForeignKey="true" />
+      <Association Name="Visitor_Visit" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AutomationStates" Member="AutomationStates">
+    <Type Name="AutomationState">
+      <Column Name="AutomationStateId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AutomationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="CreatedDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EntryDateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="WakeupDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StateId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="StateName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TestSetId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TestValues" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="State" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LastAccessedDateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Automation_AutomationState" Member="Automation" ThisKey="AutomationId" OtherKey="AutomationId" Type="Automation" IsForeignKey="true" />
+      <Association Name="Visitor_AutomationState" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Browsers" Member="Browsers">
+    <Type Name="Browser">
+      <Column Name="BrowserId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MajorName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MinorName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(16) NOT NULL" CanBeNull="false" />
+      <Association Name="Browser_Visit" Member="Visits" ThisKey="BrowserId" OtherKey="BrowserId" Type="Visit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cache_TrafficByDay" Member="Cache_TrafficByDays">
+    <Type Name="Cache_TrafficByDay">
+      <Column Name="Date" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="TrafficType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CampaignId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="KeywordsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Keywords" Type="System.String" DbType="NVarChar(400)" CanBeNull="true" />
+      <Column Name="ReferringSiteId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ReferringSite" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Multisite" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="DeviceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FirstVisit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Visits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Value" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cache_ValueBySource" Member="Cache_ValueBySources">
+    <Type Name="Cache_ValueBySource">
+      <Column Name="Date" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="TrafficType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Multisite" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="DeviceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Visits" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Value" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FirstVisitValue" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Visitors" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cache_VisitEvents" Member="Cache_VisitEvents">
+    <Type Name="Cache_VisitEvent">
+      <Column Name="Date" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="Month" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="VisitId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TrafficType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CampaignId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Multisite" Type="System.String" DbType="NVarChar(450)" CanBeNull="true" />
+      <Column Name="DeviceName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PageEventDefinitionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PageEventName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IsGoal" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="EventItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="DataKey" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NumberOfEvents" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cache_VisitorsByLocation" Member="Cache_VisitorsByLocations">
+    <Type Name="Cache_VisitorsByLocation">
+      <Column Name="Date" Type="System.String" DbType="Char(8)" CanBeNull="true" />
+      <Column Name="VisitorClassification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LocationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Region" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Visits" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Value" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Campaigns" Member="Campaigns">
+    <Type Name="Campaign">
+      <Column Name="CampaignId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CampaignName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Cost" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CostPerClick" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CostPerDay" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CostBase" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Category1Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category1Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Category2Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category2Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Category3Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category3Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IntegrationLabel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="IntegrationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Campaign_Automation" Member="Automations" ThisKey="CampaignId" OtherKey="Campaignid" Type="Automation" />
+      <Association Name="Campaign_Visit" Member="Visits" ThisKey="CampaignId" OtherKey="CampaignId" Type="Visit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GeoIps" Member="GeoIps">
+    <Type Name="GeoIp">
+      <Column Name="Ip" Type="System.Data.Linq.Binary" DbType="VarBinary(16) NOT NULL" IsPrimaryKey="true" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="VisitorClassification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CachedValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Fetched" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="GeoIp_Visit" Member="Visits" ThisKey="Ip" OtherKey="Ip" Type="Visit" />
+      <Association Name="VisitorClassification_GeoIp" Member="VisitorClassification1" ThisKey="VisitorClassification" OtherKey="VisitorClassification1" Type="VisitorClassification" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItemUrls" Member="ItemUrls">
+    <Type Name="ItemUrl">
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Keywords" Member="Keywords">
+    <Type Name="Keyword">
+      <Column Name="KeywordsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Keyword_Visit" Member="Visits" ThisKey="KeywordsId" OtherKey="KeywordsId" Type="Visit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Locations" Member="Locations">
+    <Type Name="Location">
+      <Column Name="LocationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BusinessName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorClassification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IntegrationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IntegrationLabel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ExternalUser" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="Location_Visit" Member="Visits" ThisKey="LocationId" OtherKey="LocationId" Type="Visit" />
+      <Association Name="Location_NotificationSubscription" Member="NotificationSubscriptions" ThisKey="LocationId" OtherKey="LocationId" Type="NotificationSubscription" />
+      <Association Name="VisitorClassification_Location" Member="VisitorClassification1" ThisKey="VisitorClassification" OtherKey="VisitorClassification1" Type="VisitorClassification" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NotificationSubscriptions" Member="NotificationSubscriptions">
+    <Type Name="NotificationSubscription">
+      <Column Name="NotificationSubscriptionsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LocationId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="MailRecipients" Type="System.String" DbType="NVarChar(254) NOT NULL" CanBeNull="false" />
+      <Association Name="Location_NotificationSubscription" Member="Location" ThisKey="LocationId" OtherKey="LocationId" Type="Location" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.OS" Member="Os">
+    <Type Name="O">
+      <Column Name="OsId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MajorName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="MinorName" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Version" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Association Name="O_Visit" Member="Visits" ThisKey="OsId" OtherKey="OsId" Type="Visit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PageEventDefinitions" Member="PageEventDefinitions">
+    <Type Name="PageEventDefinition">
+      <Column Name="PageEventDefinitionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsSystem" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsAuthorFeedback" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsGoal" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IsFailure" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Category1Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category1Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Category2Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category2Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Category3Label" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Category3Id" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Association Name="PageEventDefinition_PageEvent" Member="PageEvents" ThisKey="PageEventDefinitionId" OtherKey="PageEventDefinitionId" Type="PageEvent" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PageEvents" Member="PageEvents">
+    <Type Name="PageEvent">
+      <Column Name="PageEventId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PageEventDefinitionId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="PageId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="IntegrationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IntegrationLabel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DataKey" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Column Name="DataCode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CustomSorting" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="PageEventDefinition_PageEvent" Member="PageEventDefinition" ThisKey="PageEventDefinitionId" OtherKey="PageEventDefinitionId" Type="PageEventDefinition" IsForeignKey="true" />
+      <Association Name="Visit_PageEvent" Member="Visit" ThisKey="VisitId" OtherKey="VisitId" Type="Visit" IsForeignKey="true" />
+      <Association Name="Page_PageEvent" Member="Page" ThisKey="PageId" OtherKey="PageId" Type="Page" IsForeignKey="true" />
+      <Association Name="Visitor_PageEvent" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pages" Member="Pages">
+    <Type Name="Page">
+      <Column Name="PageId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VisitId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitPageIndex" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ItemId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ItemLanguage" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemVersion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DeviceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="Url" Type="System.String" DbType="VarChar(800) NOT NULL" CanBeNull="false" />
+      <Column Name="UrlText" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="TestSetId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="TestValues" Type="System.Data.Linq.Binary" DbType="Binary(16)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Duration" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Data" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DeviceName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Page_PageEvent" Member="PageEvents" ThisKey="PageId" OtherKey="PageId" Type="PageEvent" />
+      <Association Name="Visit_Page" Member="Visit" ThisKey="VisitId" OtherKey="VisitId" Type="Visit" IsForeignKey="true" />
+      <Association Name="Visitor_Page" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Profiles" Member="Profiles">
+    <Type Name="Profile">
+      <Column Name="ProfileId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VisitId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="ProfileName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PatternValues" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="PatternLabel" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PatternId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Visit_Profile" Member="Visit" ThisKey="VisitId" OtherKey="VisitId" Type="Visit" IsForeignKey="true" />
+      <Association Name="Visitor_Profile" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReferringSites" Member="ReferringSites">
+    <Type Name="ReferringSite">
+      <Column Name="ReferringSiteId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Host" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TrafficType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="ReferringSite_Visit" Member="Visits" ThisKey="ReferringSiteId" OtherKey="ReferringSiteId" Type="Visit" />
+      <Association Name="TrafficType_ReferringSite" Member="TrafficType1" ThisKey="TrafficType" OtherKey="TrafficType1" Type="TrafficType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Screens" Member="Screens">
+    <Type Name="Screen">
+      <Column Name="ScreenId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Width" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Height" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Screen_Visit" Member="Visits" ThisKey="ScreenId" OtherKey="ScreenId" Type="Visit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Status" Member="Status">
+    <Type Name="Status">
+      <Column Name="StatusId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InstanceName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LastSuccessful" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastFailed" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TestDefinitions" Member="TestDefinitions">
+    <Type Name="TestDefinition">
+      <Column Name="TestSetId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TestSetName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="VariableId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="VariableLabel" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="VariableIndex" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValueId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ValueLabel" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrafficTypes" Member="TrafficTypes">
+    <Type Name="TrafficType">
+      <Column Name="TrafficType" Member="TrafficType1" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="TrafficType_Visit" Member="Visits" ThisKey="TrafficType1" OtherKey="TrafficType" Type="Visit" />
+      <Association Name="TrafficType_ReferringSite" Member="ReferringSites" ThisKey="TrafficType1" OtherKey="TrafficType" Type="ReferringSite" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserAgents" Member="UserAgents">
+    <Type Name="UserAgent">
+      <Column Name="UserAgentId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserAgent" Member="UserAgent1" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CachedValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Fetched" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VisitorClassification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="UserAgent_Visit" Member="Visits" ThisKey="UserAgentId" OtherKey="UserAgentId" Type="Visit" />
+      <Association Name="VisitorClassification_UserAgent" Member="VisitorClassification1" ThisKey="VisitorClassification" OtherKey="VisitorClassification1" Type="VisitorClassification" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VisitorClassifications" Member="VisitorClassifications">
+    <Type Name="VisitorClassification">
+      <Column Name="VisitorClassification" Member="VisitorClassification1" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="VisitorClassification_GeoIp" Member="GeoIps" ThisKey="VisitorClassification1" OtherKey="VisitorClassification" Type="GeoIp" />
+      <Association Name="VisitorClassification_Location" Member="Locations" ThisKey="VisitorClassification1" OtherKey="VisitorClassification" Type="Location" />
+      <Association Name="VisitorClassification_UserAgent" Member="UserAgents" ThisKey="VisitorClassification1" OtherKey="VisitorClassification" Type="UserAgent" />
+      <Association Name="VisitorClassification_Visitor" Member="Visitors" ThisKey="VisitorClassification1" OtherKey="VisitorClassification" Type="Visitor" />
+      <Association Name="VisitorClassification_Visitor1" Member="Visitors1" ThisKey="VisitorClassification1" OtherKey="OverrideVisitorClassification" Type="Visitor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Visitors" Member="Visitors">
+    <Type Name="Visitor">
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VisitorClassification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OverrideVisitorClassification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VisitCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AuthenticationLevel" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ExternalUser" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Column Name="IntegrationId" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="IntegrationLabel" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Visitor_Visit" Member="Visits" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visit" />
+      <Association Name="Visitor_AutomationState" Member="AutomationStates" ThisKey="VisitorId" OtherKey="VisitorId" Type="AutomationState" />
+      <Association Name="Visitor_PageEvent" Member="PageEvents" ThisKey="VisitorId" OtherKey="VisitorId" Type="PageEvent" />
+      <Association Name="Visitor_Page" Member="Pages" ThisKey="VisitorId" OtherKey="VisitorId" Type="Page" />
+      <Association Name="Visitor_Profile" Member="Profiles" ThisKey="VisitorId" OtherKey="VisitorId" Type="Profile" />
+      <Association Name="Visitor_VisitorTag" Member="VisitorTags" ThisKey="VisitorId" OtherKey="VisitorId" Type="VisitorTag" />
+      <Association Name="VisitorClassification_Visitor" Member="VisitorClassification1" ThisKey="VisitorClassification" OtherKey="VisitorClassification1" Type="VisitorClassification" IsForeignKey="true" />
+      <Association Name="VisitorClassification_Visitor1" Member="VisitorClassification2" ThisKey="OverrideVisitorClassification" OtherKey="VisitorClassification1" Type="VisitorClassification" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VisitorTags" Member="VisitorTags">
+    <Type Name="VisitorTag">
+      <Column Name="VisitorTagId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="VisitorId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="TagName" Type="System.String" DbType="NVarChar(450) NOT NULL" CanBeNull="false" />
+      <Column Name="TagValue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="DateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AcquaintanceId" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="rn" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Visitor_VisitorTag" Member="Visitor" ThisKey="VisitorId" OtherKey="VisitorId" Type="Visitor" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.fn_abc_hexadecimal" Method="fn_abc_hexadecimal" IsComposable="true">
+    <Parameter Name="binvalue" Type="System.Data.Linq.Binary" DbType="VarBinary(255)" />
+    <Return Type="System.String" />
+  </Function>
+</Database>

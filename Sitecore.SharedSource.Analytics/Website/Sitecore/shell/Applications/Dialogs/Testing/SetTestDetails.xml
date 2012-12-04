@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control xmlns:def="Definition" xmlns="http://schemas.sitecore.net/Visual-Studio-Intellisense">
+  <Sitecore.Shell.Applications.Dialogs.SetTestDetails>
+    <FormDialog ID="Dialog" Icon="Software/32x32/breakpoints.png" Header="Test the Component" Text="Define the variations that you want to use in the multivariate test." >
+      <!--<CodeBeside Type="Sitecore.Shell.Applications.Dialogs.Testing.SetTestDetailsForm, Sitecore.Client"/>-->
+		<CodeBeside Type="Sitecore.SharedSource.Analytics.CustomSitecore.Dialogs.Testing.SetTestDetailsForm, Sitecore.SharedSource.Analytics"/>
+
+		<Script Src="/sitecore/shell/Controls/Lib/jQuery/jQuery.noconflict.js"></Script>      
+      <Script Src="/sitecore/shell/Controls/CollapsiblePanel/CollapsiblePanel.js"></Script>
+      <Script Src="/sitecore/shell/Applications/Dialogs/Testing/SetTestDetails.js"></Script>      
+      <Stylesheet Src="/sitecore/shell/Controls/CollapsiblePanel/CollapsiblePanel.css" />
+      <Stylesheet Src="/sitecore/shell/Applications/Dialogs/Testing/SetTestDetails.css" DeviceDependant="false" />
+      <GridPanel Width="100%" Height="100%">
+        <Border GridPanel.Height="24px" GridPanel.VAlign="top" >
+          <Button ID="NewVariation" Class="command-button" Header="New Variation" Click="AddVariation"></Button>
+          <Checkbox ID="ComponentReplacing" Click="AllowComponentReplace" Header="Enable variation of component design."></Checkbox>
+        </Border>
+        <Scrollbox Padding="0px" Class="scScrollbox scFixSize scFixSize4" Height="100%" Width="100%" GridPanel.Height="100%" ID="Container">
+          <Border ID="Variations">
+          </Border>
+          <Border ID="NoVariations">
+            <table class="no-variations">
+              <tr>
+                <td>
+                  <Literal Class="no-variations-headline" Text="To define a variation for this test, click New Variation."></Literal>
+                  
+                  <Literal Class="no-variations-text" Text="A test must contain at least two variations. When you have defined the variations, in the ribbon, click the 'Testing' tab and then start the test."></Literal>
+                </td>
+              </tr>
+            </table>
+          </Border>
+        </Scrollbox>
+        <Border GridPanel.Class="cross-piece"></Border>
+      </GridPanel>
+      <Border ID="ResetContainer" Visible="false" def:placeholder="Buttons">
+        <a href="#" onclick="scForm.invoke('variation:reset')">
+          <Literal Text="Remove All and Close"></Literal>
+        </a>
+      </Border>
+    </FormDialog>
+  </Sitecore.Shell.Applications.Dialogs.SetTestDetails>
+</control>

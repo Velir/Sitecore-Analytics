@@ -1,0 +1,282 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Sitecore SharedSource Analytics</PackageName>
+      <Author>Tim Braga</Author>
+      <Version>1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/{5FEFF352-6AED-4EEF-9CD3-27B19CFCCDFE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Buttons/{68C6E678-2E61-44F6-95E3-093A23F2337E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Buttons/HTML View/{A476AB0A-51D6-4A9F-AF54-0EB2366138F5}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/{D6FDCE1E-E5DC-4A45-BEE1-B7B86A5954AC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/Head1/{AAFE03B5-F17D-44A0-9C0F-0485BA109DAE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/Head2/{FF7D66B5-53C4-4B58-9C6C-A18DFF42293E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/Head3/{E528DCDF-8861-4D34-B56D-FDBE79FA29BE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/MsoBodytext/{FD722425-2620-461B-96D4-75EA7B87E91B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/MsoHead1/{D1D1F7F0-7095-4838-98F4-E93D74ECEA2D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/MsoHead2/{FAA71CB0-82C0-48A0-AF98-EB5B020C0491}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Class Translation/MsoHead3/{95438337-4122-487D-A645-8F698E51B1CA}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Names/{876F5164-8A09-4F84-B8A2-7D1333120D8C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Names/Arial/{0756ECD0-8B82-4151-A3D2-4888C38A085C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Names/Tahoma/{36AAF6AA-DDAB-44A7-A383-924D503976B7}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Names/Times New Roman/{1DEE19E3-198C-445E-ADC3-DC3A70E34328}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Names/Verdana/{178027A4-89E3-4D80-AB0B-2969200E4530}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/{473CDB79-AF47-4C3F-9F6E-D12267C0F642}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/1/{0C040BC8-3D9B-49C0-899A-935F0A051380}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/2/{D88B361C-8B6A-4E95-A238-5D7CE7F38415}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/3/{7FDD0F6D-8288-4F95-AF5E-74BAC632EA29}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/4/{3521DFE7-EC34-43E5-B4A7-AA1338898289}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/5/{B426D091-D2C5-4B8C-B422-E7DCB2F63D17}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/6/{277E9C9C-5F89-48E5-869F-1FE1A1ADDC0D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Font Sizes/7/{29E3B4A3-53D6-44B7-9E4F-21902A7C435D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Images/{305B1517-0F59-4D80-942A-3EA84EB80BBF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Images/Help/{F1AF9294-9FC3-49AD-AE3A-0909691F983D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/{7B329F29-30CA-484E-8BBF-46A148B49689}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/Bordered/{B2BD0C8A-1D55-4202-82BE-A4FA31AEFBFB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/Clipped/{9F2398C4-4DAE-430D-B9A5-5BA43622CF77}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/Float Left/{46E21FA1-64A2-4AE6-BA4C-57BEF8378D70}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/Float Right/{CC5616DA-7F18-43F3-A8BD-F38A5165DBCF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/No Wraping/{6CF38FD9-96AE-4B6B-AC9A-C5C07E0FB6C8}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Inline Styles/Scrollbox/{9D88E522-4DAF-4363-9CBF-D09C0392F414}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Links/{2D5F839F-FA4B-4511-BCA2-E75B4AD444EE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Links/Google/{F93DEC3A-4C99-44E8-BE7B-677231E1D9D6}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Links/Sitecore/{6999DCD5-E2C2-4A0D-B0D4-F275A6DADCC5}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/{D60D7A82-2796-407E-97CC-2DE62CBDA9ED}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Address/{F00C847D-7619-43A1-A622-AD6413A4C133}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Definition Term/{E306A4C8-A01C-4FD6-B506-E929301B88EB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Formatted/{C7CD6ADA-3CC8-425D-9AD8-751D72311939}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Heading 1/{9B7C2BE5-6835-4B89-B8E4-76FDA4E03AFC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Heading 2/{6CA728D5-D175-4F6A-AD3E-5F6375C4BEF1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Heading 3/{20E21C8C-1CF9-4E31-B230-24A3DF28B66D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Heading 4/{FC0BB1E6-7254-4DCD-A0F5-3C2961AC17FB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Heading 5/{B763104E-197B-44B5-8CDF-5D753A25B14B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Heading 6/{A88EC2A7-9463-4884-A3CD-57511D25B087}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Menu/{C29872A7-1E45-4819-AAF1-91D58955DAE4}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Paragraphs/Normal/{107C575B-84E1-4F5C-AFCA-1542F707EB39}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/{1DEBA1F5-1E53-438B-8FF8-E9AC5BB864D4}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/{F693B626-DA6D-4DDD-A0AC-146CE7B9A366}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Copy of Write/{9691EE45-4533-489A-ACA5-897B53E5A928}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Copy of Write/Save/{13E4800C-32DA-49BE-A2A5-7B85DE5CF1B3}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/{9519D8A0-1CAF-4450-B32F-E695AB7E750D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Clipboard/{5976687D-944B-467E-B7E1-FE7D03D3C5E6}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Clipboard/Copy/{14066E3C-291E-4739-9AE7-DC43CE71AB56}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Clipboard/Cut/{DD65D43B-6DBE-4A87-98D6-519A4D45D3AC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Clipboard/Paste/{0BBAA259-0ECC-4E99-8AD7-4B7EDA21CA46}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/New Line/{DC2F86F5-5C9E-435F-BC5C-235769AC2030}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Undo/{F814373B-F664-4A91-91CB-25BF5BDCCEFC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Undo/Redo/{D4024CBF-66B3-407A-B6B8-50FE989FCA10}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Edit/Undo/Undo/{836494FF-2013-4B17-85F5-A4EC4F037955}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Insert/{C575517C-7023-402C-8780-55622E94DD9A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Insert/Insert Link/{B3700620-0073-4DCF-8C2C-B218A2C6F7CD}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Insert/Insert Symbol/{D1BED69C-FD9D-42CF-9132-B13D06E00D3C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Insert/Insert Table/{FC2E5386-383D-40C2-B681-A20109C8AB3E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Insert/InsertMedia/{A14CE954-EE4A-4313-B3C2-C9BBE38A29D9}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/{F94DE117-1B4E-470A-8CA4-1E4CE97B9965}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Indents/{B9DA6300-62BE-4D3D-AC7A-13A82E7FEE39}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Indents/Indent/{1A0A1238-5818-4AFE-88E3-5C36DE49087A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Indents/Outdent/{EE8662B8-3B34-4994-921E-C3E0CB26BD0F}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Justification/{2C53C985-7F64-4F2C-BC1F-D4D59CF7236E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Justification/Center/{B77C8D02-E955-49F1-A40D-D2001AD76150}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Justification/Full/{6FF78AFC-B938-45B6-A4F0-85F8BAAD50E7}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Justification/Left/{8AF78BF1-CB95-48FA-81EE-95F92CE35E2B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Justification/None/{5E76868E-9E56-4908-9585-3AC39CC815BC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Justification/Right/{65EA0780-7325-4000-9E55-16915F0867CF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Lists/{75FC124E-9BDF-472B-AAC5-854E5C69B1E3}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Lists/Ordered/{0F0C4C58-5585-4D4E-9B0C-2BF5B30AB6A5}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/Lists/Unordered/{3A096F39-A0C0-4C3E-9FB2-4DD42BB4C748}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Paragraph/New Line/{D79259A6-B2D4-4A90-B74A-F73875A614AD}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/{290E6A29-C435-4608-ADAF-400FF46FF53C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Color/{D8D0F302-1CE6-411C-9A34-CBEE19938E2C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Color/BackColor/{7CB06BDD-8824-4A50-A2C5-634BA1236E88}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Color/ForeColor/{A192207F-B7CC-41AE-A3ED-01015A49B16D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/{8C2590E3-D13A-4FFF-8E75-D142BB3E7C4C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/Bold/{90B13271-CC1F-43B7-8DEF-0F200C407B79}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/Italic/{FDE7F2E7-44A6-465D-B1D5-B2FFA9DEF7E1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/Strikeout/{85463422-291F-404B-A9FC-9398654C885A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/Subscript/{95D57841-30C6-4BD1-BBB4-7761E79845CE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/Superscript/{80C63812-4D8E-4153-B3DE-375671829096}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Font/Underline/{BBCAED28-00A2-442F-8853-3439BC887071}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/New Line/{A0F6CAA2-D518-4E00-867E-C637C6DE493A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Style/{D4F06B43-7564-4499-9719-975027EE1507}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Style/Font Name/{64A18501-63BC-435C-97FF-A9CE0C7F04B6}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Style/Style/Font Size/{62DB1193-67C5-4D9B-88C7-6DFF5B14D9AF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Zoom/{16EE24A7-B406-4EED-905A-50C9B8C09908}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Ribbon/Format/Zoom/Zoom/{51A8B49A-3B7C-4191-B7A7-11A51A23EC8B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/{F91D5C00-DABA-4399-9DA1-AF3B9F5B8B5D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Access Tool image link/{6F19D302-ACC4-4EAC-9DBC-E05C3A37192D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Access Tool text link/{18CA2C30-FA03-4996-95DC-AD52775A2F3F}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Already a member log in code/{5399B720-42DF-42CD-9145-12F57E4B6C20}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Back -left- navigation button/{56D61B41-0684-40D8-A57E-4F8FBCBE3250}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Back to Top/{197692EF-3E40-4DFE-8AEA-A77CF693CCF8}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Browse Resources List/{DC88F472-8585-48FF-88C3-C388BD1E1033}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Footnotes/{08F63ABE-7E76-4A91-B9BC-D8B078568D60}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/How to Participate/{722BD0A0-7614-4FD0-BF55-16C70BB31E28}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Lightbox Slider/{CB97C111-CD49-4934-A0ED-6324D924EB15}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Meeting at capacity/{8230FDD7-E73F-4BB8-A2B1-143E30B2AF17}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Printable Handout/{B464C247-67D9-4CD9-AC74-55C2E21186BB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Quotes/{9AFB3CF6-A4DA-4D41-AB80-03AD788C1C83}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Register button non-member/{9B8A8611-8096-4D76-BAF9-E949C54D2660}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Register button/{334BB6BE-EEF7-4B35-9817-FAEDEAEE9A19}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/Streaming media detail/{E8B246AC-B65A-4B72-A1B2-33FA1E26CC35}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Snippets/TwoColumnTab/{05AD53A9-CEE7-4662-B95B-B6452D02A0EF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Tidy/{8611C1E2-0A3D-4B5D-89E4-25CCE81D0403}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/{82D03989-B707-43D1-84B6-38231994118C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Clean/{55087E38-B6E2-473D-BEEA-7BE92B30F75D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Copy/{0A68952C-4C61-4686-B0EB-BB13E199128D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Cut/{B3AA23C4-9E4F-4DD8-9517-65C4AFCAC608}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Date/{4BCFD4E5-CA47-4DF6-8382-0597F16BA935}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Divider/{D0996ADA-44F7-42EC-B377-299908B8AF0E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Find/{0B8EC4F8-1B27-4384-BEB6-CDA727C7CC1C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Flash/{ED333BB7-9390-4BF3-9592-256E2311912B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Insert Form Element/{C63FC766-4DE9-4415-A57D-F588FAC3C99D}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Insert Link/{BD7D1D5E-32E6-4D53-AB55-17F2C70A058C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Insert MV Sitecore Link/{8A64822E-E075-49E0-B016-C35B9CB55789}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Insert Snippet/{81815EAE-F2C6-4FA1-A036-8110ED30C20C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Insert Symbol/{06DACF59-8A92-403D-95CA-D8B5BA218036}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Insert Table/{5A6F28C5-2660-4DAB-8C08-2E5FBF54082B}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/InsertSitecoreMedia/{1CC967F2-A6E9-4974-8EDF-F0CE011AD096}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Media/{887D9A6A-0896-4FA5-81BD-9E028E70D873}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Paragraph/{48052AA6-3A31-44EE-BDC6-BF35A63D4F34}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Paste Plain Text/{542F76FA-0CCB-4D0E-AA28-F63CBDACCEFD}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Paste Word No Font Sizes/{60149FE0-4F44-441F-B826-6BA98EC8B30E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Print/{B6C61F04-73DE-4F38-A602-101A16235EA1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Redo/{D81726E9-2462-429D-9437-31AC64F8705C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Repeat Last Command/{D358B49A-8BC0-4CC1-B155-DE426E9C6FCB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Time/{42F2AF7F-285E-463E-9FBD-764DF134E945}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Undo/{5E7C6F77-055F-469E-888B-791BC8A4844E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 1/Unlink/{E47CC52A-E3E4-4B44-9BF4-2C84B708879E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/{081544AB-DF55-4E09-9789-93DB98153CC3}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Absolute Position/{4A1BA863-7591-462B-A6AA-D9C8DAD405A2}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Bold/{6AE06B47-0992-4E63-9D90-68562BB73984}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Divider/{3B98D6F4-DF87-446C-B458-53E122B421AC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Help/{D8046593-41D2-4F66-AD56-D58221537D98}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Indent/{10FE8BB6-DFAA-4155-B1A8-6DC4BC026FE9}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Insert Horizontal Rule/{6830728B-EC3E-464B-85B7-A1322A07297E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Insert Ordered List/{DC175393-6F2E-4B0B-925A-B2ED3C5EF70A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Insert Unordered List/{B839C3E0-D1E8-4C8D-9733-333270E34D71}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Italic/{78DF1B44-1EED-4F93-A56B-EF14FD93CDC9}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Justify None/{743B2B97-8BF7-4017-81F9-07ED1E7B8EB1}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Modules/{D1F91759-9FBD-47FF-959F-F601EFE4E790}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Outdent/{0EDE85CC-287B-411E-A3E3-F52DEE8083B0}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Select All/{D670BB54-6A9A-4B65-998D-5A37A524C5B0}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Spellcheck/{82423D7A-05EF-444C-A650-22EA051726FF}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/StrikeThrough/{F6848310-98C8-49C1-983A-F0A489C42FC5}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Subscript/{29B38DD1-FEDC-4858-B95B-A7EABF4490CB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Superscript/{64DA1B42-E81E-4D77-A02E-CEE4FFE23199}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Toggle Border/{CF1A75CB-5EA2-4DFD-99AE-8A7559F029CE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/ToggleDocking/{391EF517-FE05-41EB-9A1B-288F435D8F34}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 2/Underline/{E8186CE3-7735-44D7-AF4A-C1862A041BFE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 3/{C5AC1DC7-A9D5-4A14-82A6-B279B1C4F771}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 3/Css Class/{85907F15-85E5-443F-94F0-B75A312DC4D2}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 3/Divider/{78AA1F42-49DD-405D-9C50-648C60A3CC80}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 3/Format Block/{FD5E0399-6080-48C9-9FA0-9124FEC48C9C}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Toolbar 3/Zoom/{31CC871C-233B-4AC8-8008-E74E12533F58}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/{95702CAA-F3AA-4C2F-8CE6-53C5B809904A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/Bold/{4E1CD416-25CB-4FA4-8FC6-D26827237BEE}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/Edit html/{E3DC6488-E3F5-4CA5-BE8D-71765A500800}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/Insert Image/{7E1E6AC9-C815-4C92-9B71-0C2C1F699C48}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/Insert Link/{8BE329FD-17F6-4ED0-A5D7-C76342183C37}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/Italic/{1CE8DC49-05CB-45FC-ACE3-69B1172D48FB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/WebEdit Buttons/Underline/{717674BE-74EF-4454-B20F-2867969199B9}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/{F09B24D4-1965-42C2-AE84-99B69DCBC01E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/10/{CA22A8D4-083D-423E-B112-63AB8991CE55}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/100/{6A59BE26-E75B-493B-913D-48899F31D4C6}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/20/{4F5C10C4-43B5-4EAD-8BB4-4C182205FC3A}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/200/{3A8E9323-CED9-4B71-99EE-431A835AD51E}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/30/{6381B7D7-2D51-4422-8619-14373FB4C0C7}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/300/{3CA2EBE4-F23A-4462-B55E-E36A1EC033BC}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/40/{37C2ED3D-C986-450F-94F2-87F986E455DB}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/400/{5D0A86CE-CDC2-4D68-A070-9AB58985CC28}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/50/{1D23EBD3-D535-424B-A422-FD29D7F28043}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/66/{747DF37F-EEF2-4C54-92AE-2837F9D0D1B8}/invariant/0</x-item>
+        <x-item>/core/sitecore/system/Settings/Html Editor Profiles/MultiVariant Rich Text/Zoom/80/{C56D8894-55A4-405B-9727-097EE55F6542}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Insert Variant/{27326C1A-B32D-4CB5-9710-779EC74EA27F}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Filterable Commands/Filters/Variant Filter/{DD2905F0-D0CD-43C7-AE67-7D1F994DB430}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Testing/Reports/{F6C7AAD8-8C4C-4451-AB2A-1E9F852D308C}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Testing/Reports/Multivariant Report/{D04CA8DF-751B-413B-ADE4-08C0CF5EB63E}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Core</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Sitecore.SharedSource.Analytics.config</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Analytics.Master</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Controls/AnalyticsInformation.ascx</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Controls/MultivariantReport.ascx</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Images/breakpoint.png</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Images/component.png</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Images/delete2.png</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Images/draghandle9x15.png</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Images/element_selection.png</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Images/menudropdown_black9x8.png</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Reports/Multivariant.aspx</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Scripts/analytics.js</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Services/AnalyticsService.asmx</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Styles/analytics.css</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Styles/analytics.infoPanel.css</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Analytics.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Commons.dll</x-item>
+        <x-item>/bin/Velir.SitecoreLibrary.Modules.Contextualizer.dll</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Controls/InsertMultiVariantLink/InsertMultiVariantLink.js</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Controls/InsertMultiVariantLink/InsertMultiVariantLink.xml</x-item>
+        <x-item>/sitecore modules/Shell/Analytics/Controls/InsertMultiVariantLink/RichText.Commands.InsertMultiVariantLink.js</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>

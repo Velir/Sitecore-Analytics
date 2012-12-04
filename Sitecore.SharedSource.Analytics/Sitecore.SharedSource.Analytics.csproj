@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DA666C3-604B-423D-81EF-24E1948CF523}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.SharedSource.Analytics</RootNamespace>
+    <AssemblyName>Sitecore.SharedSource.Analytics</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomItemGenerator">
+      <HintPath>..\lib\Velir\CustomItemGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics">
+      <HintPath>..\lib\Sitecore\v6.5.0\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\lib\Sitecore\v6.5.0\Sitecore.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\lib\Sitecore\v6.5.0\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Logging">
+      <HintPath>..\lib\Sitecore\v6.5.0\Sitecore.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.SharedSource.Commons">
+      <HintPath>..\lib\Velir\Sitecore.SharedSource.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\lib\Sitecore\v6.5.0\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Velir.SitecoreLibrary.Modules.Contextualizer">
+      <HintPath>..\lib\Velir\Velir.SitecoreLibrary.Modules.Contextualizer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\Analytics.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Analytics.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Model\TestVariationGrouping.cs" />
+    <Compile Include="Context\Model\VisitGoal.cs" />
+    <Compile Include="Context\Model\VisitVariation.cs" />
+    <Compile Include="Context\PageStatistics\PageStatisticsContext.cs" />
+    <Compile Include="Controls\AnalyticsControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Web\AnalyticsInformation.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Web\AnalyticsInformation.ascx.designer.cs">
+      <DependentUpon>AnalyticsInformation.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Web\MultivariantReport.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Web\MultivariantReport.ascx.designer.cs">
+      <DependentUpon>MultivariantReport.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomItems\GoalItem.base.cs" />
+    <Compile Include="CustomItems\PageEventItem.base.cs" />
+    <Compile Include="CustomItems\Testing\MultivariateTestDefinitionItem.base.cs" />
+    <Compile Include="CustomItems\Testing\MultivariateTestStrategyItem.base.cs" />
+    <Compile Include="CustomItems\Testing\MultivariateTestValueItem.base.cs" />
+    <Compile Include="CustomItems\Testing\MultivariateTestVariableItem.base.cs" />
+    <Compile Include="CustomItems\Testing\PageLevelTestDefinitionItem.base.cs" />
+    <Compile Include="CustomItems\Testing\PageLevelTestValueItem.base.cs" />
+    <Compile Include="CustomItems\Testing\PageLevelTestVariableItem.base.cs" />
+    <Compile Include="CustomItems\Testing\TestDefinitionItem.base.cs" />
+    <Compile Include="CustomItems\Testing\TestValueItem.base.cs" />
+    <Compile Include="CustomItems\Testing\TestVariableItem.base.cs" />
+    <Compile Include="CustomSitecore\Commands\InsertVariant.cs" />
+    <Compile Include="CustomSitecore\Commands\RunReport.cs" />
+    <Compile Include="CustomSitecore\Dialogs\RichTextEditor\InsertMultiVariantLinkForm.cs" />
+    <Compile Include="CustomSitecore\Dialogs\Testing\SetTestDetailsForm.cs" />
+    <Compile Include="Filters\VariantFilter.cs" />
+    <Compile Include="Mappings\AMultiVariantMapping.cs" />
+    <Compile Include="Mappings\IMultiVariantMapping.cs" />
+    <Compile Include="Mappings\MultiVariantProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reference\AnalyticsReference.cs" />
+    <Compile Include="Reports\Multivariant.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Multivariant.aspx.designer.cs">
+      <DependentUpon>Multivariant.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AnalyticsService.asmx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Context\Analytics.dbml.layout">
+      <DependentUpon>Analytics.dbml</DependentUpon>
+    </None>
+    <None Include="Packages\Sitecore SharedSource Analytics-1.zip" />
+    <None Include="Website\App_Config\Include\Sitecore.SharedSource.Analytics.config" />
+    <None Include="Website\Sitecore Modules\Shell\Analytics\Analytics.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Context\Analytics.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Analytics.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Packages\Sitecore SharedSource Analytics.xml" />
+    <Content Include="Sql\Functions\fn_abc_hexadecimal.txt" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Controls\AnalyticsInformation.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Controls\InsertMultiVariantLink\InsertMultiVariantLink.js" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Controls\InsertMultiVariantLink\InsertMultiVariantLink.xml" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Controls\InsertMultiVariantLink\RichText.Commands.InsertMultiVariantLink.js" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Controls\MultivariantReport.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\bg-body.gif" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\breakpoint.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\calendar.gif" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\component.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\delete2.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\draghandle9x15.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\element_selection.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\menudropdown_black9x8.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Reports\Multivariant.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Scripts\analytics.js" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Services\AnalyticsService.asmx" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Styles\analytics.css" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Styles\analytics.infoPanel.css" />
+    <Content Include="Website\Sitecore\shell\Applications\Dialogs\Testing\SetTestDetails.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

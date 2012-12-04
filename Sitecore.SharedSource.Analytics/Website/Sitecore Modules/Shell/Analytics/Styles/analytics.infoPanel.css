@@ -1,0 +1,111 @@
+.analyticsPanel h3
+{
+	font: bold 14px/16px Arial, sans-serif;
+	color: #193A49;
+	margin: 15px 0 0;
+	margin-bottom:5px;
+}
+
+.analyticsPanel input[type="submit"]
+{
+	font: normal 12px DIN, DINWebMedium, sans-serif;
+	background: #BF0000;
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+	border: 0;
+	padding: 5px 6px;
+}
+
+.errorPanel
+{
+	border:1px solid #8C8C8C;
+	background: none repeat scroll 0 0 #CCCCCC;
+	padding:10px 20px 20px 20px;
+	color:#193A49;
+	overflow:hidden;
+	font:bold 11px Arial, sans-serif;
+}
+
+.errorPanel .dmsTitle
+{
+	margin-left:10px;
+}
+
+.errorPanel .infoSection
+{
+	float:left;
+	margin-left:10px;
+}
+
+.errorPanel ul
+{
+	margin-top:0px;
+}
+
+.dmsPanel
+{
+	border:1px solid #8C8C8C;
+	background: none repeat scroll 0 0 #CCCCCC;
+	padding:20px;
+	margin:25px 40px 25px 40px;
+	color:#BF0000;
+}
+
+.goalsSecondColumn
+{
+	padding-top:36px;
+}
+
+.dmsHeader h3, .dmsHeader span
+{
+	float:left;
+}
+
+.dmsHeader
+{
+	overflow:hidden;
+}
+
+.dmsHeader span
+{
+	padding-top:17px;
+	padding-left:5px;
+}
+
+.dmsHeader #headerTitle
+{
+	float:left;
+}
+
+.dmsHeader #refresh
+{
+	float:right;
+}
+
+.dmsHeader #refresh input
+{
+	margin-top:15px;
+	margin-left:5px;
+}
+
+#analyticsSettings
+{
+	margin-left:10px;
+}
+
+#analyticsSettings span
+{
+	clear:left;
+	display:block;
+}
+
+#analyticsSettings .analyticsUpdatedDate
+{
+	display:inline;
+}
+
+.dmsInfoRow
+{
+	clear:both;
+}
