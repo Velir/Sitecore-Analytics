@@ -14,9 +14,9 @@ Features:
 * <a href="https://github.com/Velir/Sitecore-Analytics/blob/master/Sitecore.SharedSource.Analytics/Website/Sitecore%20Modules/Shell/Analytics/Images/informationPanel.png?raw=true">Analytics Information Panel</a>
  * Place this user control at the beginning of your form tag and watch your visitor accrue goals and view visit and visitor information.
  * This control also contains three commands that allow you to refresh the panel, create a new visit, and to have DMS commit the data to the database so you don't have to wait for Sitecore's scheduled database write.
-* Page Statistics Context
+* <a href="https://github.com/Velir/Sitecore-Analytics/blob/master/Sitecore.SharedSource.Analytics/Context/PageStatistics/PageStatisticsContext.cs">Page Statistics Context</a>
  * Utilizes Sitecore's Tracker and Linq to provide data access.
-* Analytics Control
+* <a href="https://github.com/Velir/Sitecore-Analytics/blob/master/Sitecore.SharedSource.Analytics/Controls/AnalyticsControl.cs">Analytics Control</a>
  * Have your sublayouts inherit from the Analytics control and gain access to that component's Datasource, Page Statistics and many more helper methods.
  * Subscribe to a custom analytics event and when raised, make your components reveal their information.  For example, when we show the Analytics Information Panel we raise the custom event and show that component's variation so we know we are looking at Variation B.
 * Variant Mapping
