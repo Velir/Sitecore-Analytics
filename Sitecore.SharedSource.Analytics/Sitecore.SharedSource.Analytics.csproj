@@ -174,7 +174,9 @@
     <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\delete2.png" />
     <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\draghandle9x15.png" />
     <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\element_selection.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\informationPanel.png" />
     <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\menudropdown_black9x8.png" />
+    <Content Include="Website\Sitecore Modules\Shell\Analytics\Images\report.png" />
     <Content Include="Website\Sitecore Modules\Shell\Analytics\Reports\Multivariant.aspx">
       <SubType>ASPXCodeBehind</SubType>
     </Content>
