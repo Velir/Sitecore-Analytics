@@ -21,5 +21,3 @@ Features:
  * Subscribe to a custom analytics event and when raised, make your components reveal their information.  For example, when we show the Analytics Information Panel we raise the custom event and show that component's variation so we know we are looking at Variation B.
 * Variant Mapping
  * Allows you to right click an item in the Context Menu and Insert a variation template.  The reason here is they may want to insert a wrapped template so they can identify a variation template.  This mapping also allows you to create variations custom to the template mapping.  For example, some templates you may want the variations to live under the content item, other's in a folder under the content item or even in a global variation directory.
-
-<img src="https://github.com/Velir/Sitecore-Analytics/blob/master/Sitecore.SharedSource.Analytics/Website/Sitecore%20Modules/Shell/Analytics/Images/calendar.gif?raw=true" />
