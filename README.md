@@ -5,6 +5,8 @@ Author: Tim Braga
 <br/>Email: tim.braga@velir.com
 <br/>Twitter: @tbraga01
 
+Requirements: Sitecore 6.5.0 (rev.120427) or higher
+
 The analytics library is meant to provide developers and testers with more information and easy access to certain analytic calls.  The Analytics Information Panel is the real driver which provides a front-end panel that displays visitor and engagement information.  It allows developers and testers to see the data they are accruing in the analytics database and verify certain goals and conditions are met as they navigate the website.
 
 Features:
