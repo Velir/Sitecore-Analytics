@@ -32,8 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CustomItemGenerator">
-      <HintPath>..\lib\Velir\CustomItemGenerator.dll</HintPath>
+    <Reference Include="CustomItemGenerator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Sitecore.SharedSource\CustomItemGenerator.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Analytics">
       <HintPath>..\lib\Sitecore\v6.5.0\Sitecore.Analytics.dll</HintPath>
@@ -47,8 +48,9 @@
     <Reference Include="Sitecore.Logging">
       <HintPath>..\lib\Sitecore\v6.5.0\Sitecore.Logging.dll</HintPath>
     </Reference>
-    <Reference Include="Sitecore.SharedSource.Commons">
-      <HintPath>..\lib\Velir\Sitecore.SharedSource.Commons.dll</HintPath>
+    <Reference Include="Sitecore.SharedSource.Commons, Version=1.0.4714.25074, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Sitecore.SharedSource\Sitecore.SharedSource.Commons.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -65,8 +67,9 @@
     <Reference Include="Telerik.Web.UI">
       <HintPath>..\lib\Sitecore\v6.5.0\Telerik.Web.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Velir.SitecoreLibrary.Modules.Contextualizer">
-      <HintPath>..\lib\Velir\Velir.SitecoreLibrary.Modules.Contextualizer.dll</HintPath>
+    <Reference Include="Velir.SitecoreLibrary.Modules.Contextualizer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Sitecore.SharedSource\Velir.SitecoreLibrary.Modules.Contextualizer.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
