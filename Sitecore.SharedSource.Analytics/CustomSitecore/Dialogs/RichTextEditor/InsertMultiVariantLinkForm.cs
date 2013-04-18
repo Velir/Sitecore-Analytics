@@ -150,9 +150,9 @@ namespace Sitecore.SharedSource.Analytics.CustomSitecore.Dialogs.RichTextEditor
 					//no check for existing parameters, this is because it will come across as link.aspx?_id=3D98F330EBA94EAA97C63F0D0FE1D5D8?sc_trk=SomeGoal
 					//and when the field renderer processes this it will convert it as /research?sc_trk=SomeGoal
 					string goalName = string.Empty;
-					if (goalItem.IsNotNull() && !string.IsNullOrEmpty(goalItem["Name"]))
+					if (goalItem.IsNotNull() && !string.IsNullOrEmpty(goalItem.Name))
 					{
-						goalName = string.Format("?{1}={0}", goalItem["Name"], parameterKey);
+						goalName = string.Format("?{1}={0}", goalItem.Name, parameterKey);
 					}
 
 					url = StringUtil.EscapeJavascriptString(string.Format("{0}{1}", mediaUrl, goalName));
